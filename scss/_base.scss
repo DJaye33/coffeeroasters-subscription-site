@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-primary-dark-cyan: #0e8784;
+  --color-primary-dark-blue: #333d4b;
+
+  --color-secondary-pale-orange: #fdd6ba;
+  --color-secondary-light-cream: #fefcf7;
+  --color-secondary-grey: #83888f;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inactive {
+  display: none;
+}
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Fraunces', serif;
