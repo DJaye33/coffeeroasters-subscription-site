@@ -11,6 +11,7 @@
   --color-primary-dark-cyan: #0e8784;
   --color-primary-dark-blue: #333d4b;
   --color-secondary-pale-orange: #fdd6ba;
+  --color-secondary-light-cyan: #66d2cf;
   --color-secondary-light-cream: #fefcf7;
   --color-secondary-grey: #83888f; }
 
@@ -18,14 +19,42 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
+h1 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  color: var(--color-secondary-light-cream); }
+
+p {
+  font-family: "Barlow", sans-serif;
+  color: var(--color-secondary-light-cream); }
+
 li {
   list-style: none; }
 
 a {
   text-decoration: none; }
 
+.btn {
+  cursor: pointer;
+  background-color: var(--color-primary-dark-cyan);
+  border-radius: 0.6rem;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: var(--color-secondary-light-cream);
+  padding: 1.6rem 3.1rem;
+  transition: background-color 0.3s; }
+
+.btn:hover {
+  background-color: var(--color-secondary-light-cyan); }
+
 .inactive {
   display: none; }
+
+.active {
+  display: block; }
 
 .navbar {
   display: flex;
@@ -34,15 +63,35 @@ a {
   margin: 3.2rem auto;
   width: 87%; }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 2.4rem;
+  margin: 0 auto;
+  width: 87%;
+  background-image: url("/assets/home/mobile/image-hero-coffeepress.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem; }
+
 .logo {
   height: 1.8rem; }
+  @media screen and (min-width: 768px) {
+    .logo {
+      height: 2.6rem; } }
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none; } }
 
 .hamburger:hover,
 .close:hover {
   cursor: pointer; }
 
 .overlay {
-  background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, var(--color-secondary-light-cream) 55.94%);
+  background: linear-gradient(180deg, var(--color-secondary-light-cream) 27%, rgba(254, 252, 247, 0.504981) 55.94%);
   height: 100vh;
   width: 0vw;
   position: fixed;
@@ -52,8 +101,19 @@ a {
   padding-top: 4rem;
   text-align: center;
   transition: 0.5s; }
-  .overlay-slide {
-    width: 100vw; }
+  @media screen and (min-width: 768px) {
+    .overlay {
+      background: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: initial;
+      width: 41%;
+      max-width: 28.3rem;
+      position: initial;
+      overflow-x: initial;
+      text-align: initial;
+      padding-top: 0; } }
   .overlay .overlay-navigation .navigation-link {
     display: block;
     font-family: "Fraunces", sans-serif;
@@ -64,7 +124,38 @@ a {
     margin-bottom: 3.2rem;
     white-space: nowrap;
     transition: 0.3s; }
+    @media screen and (min-width: 768px) {
+      .overlay .overlay-navigation .navigation-link {
+        display: initial;
+        font-family: "Barlow", sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: var(--color-secondary-grey);
+        margin-bottom: initial;
+        white-space: initial;
+        line-height: 1.5rem;
+        letter-spacing: 0.09rem;
+        text-transform: uppercase; } }
     .overlay .overlay-navigation .navigation-link:hover {
       color: var(--color-primary-dark-cyan); }
+
+.show {
+  width: 100vw; }
+
+.header-content .header-title {
+  font-size: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  margin-bottom: 2.4rem; }
+.header-content .header-text {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  opacity: 0.8;
+  margin-bottom: 3.9rem; }
+.header-content .header-btn {
+  display: block;
+  margin: 0 auto;
+  width: 21.7rem; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,15 @@
 .logo {
   height: 1.8rem;
+
+  @media screen and (min-width: 768px) {
+    height: 2.6rem;
+  }
+}
+
+.hamburger {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .hamburger:hover,
@@ -10,8 +20,8 @@
 .overlay {
   background: linear-gradient(
     180deg,
-    rgba(254, 252, 247, 0.504981) 0%,
-    var(--color-secondary-light-cream) 55.94%
+    var(--color-secondary-light-cream) 27%,
+    rgba(254, 252, 247, 0.504981) 55.94%
   );
   height: 100vh;
   width: 0vw;
@@ -23,8 +33,20 @@
   text-align: center;
   transition: 0.5s;
 
-  &-slide {
-    width: 100vw;
+  & {
+    @media screen and (min-width: 768px) {
+      background: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: initial;
+      width: 41%;
+      max-width: 28.3rem;
+      position: initial;
+      overflow-x: initial;
+      text-align: initial;
+      padding-top: 0;
+    }
   }
 
   .overlay-navigation {
@@ -39,9 +61,26 @@
       white-space: nowrap;
       transition: 0.3s;
 
+      @media screen and (min-width: 768px) {
+        display: initial;
+        font-family: "Barlow", sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: var(--color-secondary-grey);
+        margin-bottom: initial;
+        white-space: initial;
+        line-height: 1.5rem;
+        letter-spacing: 0.09rem;
+        text-transform: uppercase;
+      }
+
       &:hover {
         color: var(--color-primary-dark-cyan);
       }
     }
   }
+}
+
+.show {
+  width: 100vw;
 }

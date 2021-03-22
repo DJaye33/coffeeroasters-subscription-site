@@ -14,6 +14,7 @@
   --color-primary-dark-blue: #333d4b;
 
   --color-secondary-pale-orange: #fdd6ba;
+  --color-secondary-light-cyan: #66d2cf;
   --color-secondary-light-cream: #fefcf7;
   --color-secondary-grey: #83888f;
 }
@@ -21,6 +22,17 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+h1 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  color: var(--color-secondary-light-cream);
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  color: var(--color-secondary-light-cream);
 }
 
 li {
@@ -31,8 +43,30 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  cursor: pointer;
+  background-color: var(--color-primary-dark-cyan);
+  border-radius: 0.6rem;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: var(--color-secondary-light-cream);
+  padding: 1.6rem 3.1rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--color-secondary-light-cyan);
+}
+
 .inactive {
   display: none;
+}
+
+.active {
+  display: block;
 }
 // font-family: 'Barlow', sans-serif;
 // font-family: 'Fraunces', serif;
