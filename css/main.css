@@ -64,10 +64,6 @@ a {
   width: 87%; }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   padding: 10rem 2.4rem;
   margin: 0 auto;
   width: 87%;
@@ -75,6 +71,14 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1rem; }
+  @media screen and (min-width: 768px) {
+    .header {
+      padding: 10.4rem 5.8rem;
+      background-image: url("/assets/home/tablet/image-hero-coffeepress.jpg"); } }
+  @media screen and (min-width: 1200px) {
+    .header {
+      padding: 11.7rem 8.5rem;
+      background-image: url("/assets/home/desktop/image-hero-coffeepress.jpg"); } }
 
 .logo {
   height: 1.8rem; }
@@ -98,6 +102,7 @@ a {
   top: 9vh;
   right: 0;
   overflow-x: hidden;
+  z-index: 1;
   padding-top: 4rem;
   text-align: center;
   transition: 0.5s; }
@@ -147,15 +152,37 @@ a {
   line-height: 4rem;
   text-align: center;
   margin-bottom: 2.4rem; }
+  @media screen and (min-width: 768px) {
+    .header-content .header-title {
+      font-size: 4.8rem;
+      line-height: 4.8rem;
+      text-align: left;
+      max-width: 32.9rem; } }
+  @media screen and (min-width: 1200px) {
+    .header-content .header-title {
+      font-size: 7.2rem;
+      line-height: 7.2rem;
+      max-width: 49.3rem; } }
 .header-content .header-text {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
   text-align: center;
   opacity: 0.8;
-  margin-bottom: 3.9rem; }
+  margin-bottom: 4rem; }
+  @media screen and (min-width: 768px) {
+    .header-content .header-text {
+      text-align: left;
+      max-width: 39.8rem; } }
+  @media screen and (min-width: 1200px) {
+    .header-content .header-text {
+      margin-bottom: 5.6rem;
+      max-width: 44.5rem; } }
 .header-content .header-btn {
   display: block;
   margin: 0 auto;
   width: 21.7rem; }
+  @media screen and (min-width: 768px) {
+    .header-content .header-btn {
+      margin: initial; } }
 
 /*# sourceMappingURL=main.css.map */

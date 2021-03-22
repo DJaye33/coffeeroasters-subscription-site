@@ -7,10 +7,6 @@
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   padding: 10rem 2.4rem;
   margin: 0 auto;
   width: 87%;
@@ -18,4 +14,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 10.4rem 5.8rem;
+    background-image: url("/assets/home/tablet/image-hero-coffeepress.jpg");
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 11.7rem 8.5rem;
+    background-image: url("/assets/home/desktop/image-hero-coffeepress.jpg");
+  }
 }
