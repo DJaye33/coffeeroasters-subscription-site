@@ -1,17 +1,20 @@
 const hamburger = document.querySelector(".hamburger");
 const close = document.querySelector(".close");
 const overlay = document.querySelector(".overlay");
+const body = document.querySelector("body");
 
 const showOverlay = () => {
   hamburger.classList.add("inactive");
   close.classList.remove("inactive");
   overlay.classList.add("show");
+  body.classList.add("overlay-open");
 };
 
 const hideOverlay = () => {
   hamburger.classList.remove("inactive");
   close.classList.add("inactive");
   overlay.classList.remove("show");
+  body.classList.remove("overlay-open");
 };
 
 const menuChangeOnResize = () => {

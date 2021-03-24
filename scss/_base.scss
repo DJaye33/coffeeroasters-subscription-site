@@ -30,6 +30,11 @@ h1 {
   color: var(--color-secondary-light-cream);
 }
 
+h3 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+}
+
 p {
   font-family: "Barlow", sans-serif;
   color: var(--color-secondary-light-cream);
@@ -67,6 +72,10 @@ a {
 
 .active {
   display: block;
+}
+
+.overlay-open {
+  overflow: hidden;
 }
 // font-family: 'Barlow', sans-serif;
 // font-family: 'Fraunces', serif;
