@@ -1,4 +1,10 @@
 .collection {
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-start;
+  }
   &-header {
     text-align: center;
     font-family: "Fraunces", sans-serif;
@@ -8,31 +14,76 @@
     margin-bottom: 2.5rem;
     background-image: linear-gradient(
       360deg,
-      rgba(254, 252, 247, 0.0001) 0%,
+      rgba(163, 144, 94, 0) 0%,
       var(--color-primary-dark-blue) 175%
     );
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: -6.6rem;
+      z-index: -1;
+      font-size: 10rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: -2rem;
+      font-size: 15.75rem;
+    }
   }
 
   &-item-box {
     width: 100%;
     text-align: center;
     margin-bottom: 4.8rem;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 9rem;
+    }
   }
 
   &-item {
     height: 15rem;
+
+    @media screen and (min-width: 768px) {
+      height: 19.3rem;
+    }
   }
 
   &-item-text {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 4rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 7rem;
+    }
     .collection-item-heading {
       font-size: 2.4rem;
       line-height: 3.2rem;
       text-align: center;
       margin-bottom: 1.6rem;
       color: var(--color-primary-dark-blue);
+
+      @media screen and (min-width: 768px) {
+        text-align: left;
+        margin-bottom: 2.4rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        text-align: center;
+      }
     }
   }
 
@@ -41,5 +92,15 @@
     line-height: 2.5rem;
     text-align: center;
     color: var(--color-primary-dark-blue);
+
+    @media screen and (min-width: 768px) {
+      max-width: 28.2rem;
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 25.5rem;
+      text-align: center;
+    }
   }
 }
