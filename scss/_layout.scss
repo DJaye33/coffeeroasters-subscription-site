@@ -31,5 +31,24 @@
 .collection {
   width: 87%;
   margin: 0 auto;
-  margin-bottom: 20rem;
+  margin-bottom: 12rem;
+}
+
+.choose-us {
+  width: 87%;
+  max-height: 90.2rem;
+  margin: 0 auto;
+  background-color: var(--color-primary-dark-blue);
+  border-radius: 1rem;
+  padding: 6.4rem 2.4rem;
+
+  @media screen and (min-width: 768px) {
+    max-height: 57.3rem;
+    padding: 5.6rem 5.8rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-height: 57.7rem;
+    padding: 10rem 8.5rem;
+  }
 }

@@ -1,0 +1,107 @@
+.choose-us-heading {
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: var(--color-secondary-light-cream);
+  margin-bottom: 2.4rem;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+}
+
+.choose-us-paragraph {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 6.4rem;
+  opacity: 0.8;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    max-width: 58rem;
+    margin: 0 auto 8.6rem;
+  }
+}
+
+.choose-us-cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 111rem;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cards {
+    background-color: var(--color-primary-dark-cyan);
+    border-radius: 0.8rem;
+    margin-bottom: 2.4rem;
+    padding: 7.2rem 1.2rem;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      padding: 4.1rem 7rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      padding: 7.2rem 4.8rem 4.8rem;
+      max-width: 35rem;
+    }
+
+    .cards-icon-box {
+      text-align: center;
+      margin-bottom: 5.6rem;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: initial;
+        margin-right: 5.5rem;
+      }
+
+      @media screen and (min-width: 1200px) {
+        text-align: center;
+        margin-bottom: 5.6rem;
+        margin-right: initial;
+      }
+    }
+
+    .cards-text {
+      .cards-heading {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        text-align: center;
+        color: var(--color-secondary-light-cream);
+        margin-bottom: 2.4rem;
+
+        @media screen and (min-width: 768px) {
+          text-align: left;
+        }
+
+        @media screen and (min-width: 1200px) {
+          text-align: center;
+        }
+      }
+
+      .cards-paragraph {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+          text-align: left;
+        }
+
+        @media screen and (min-width: 1200px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
